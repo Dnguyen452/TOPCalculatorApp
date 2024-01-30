@@ -8,7 +8,6 @@
   </head>
 
   <body>
-    <h1>Calculator</h1>
 
     <div class="root-container">
       <div class="calculator">
@@ -16,40 +15,40 @@
           <div>
             <input
               type="text"
-              name="result"
-              id="result"
+              name="show"
+              id="display"
               placeholder="0"
               disabled
             />
           </div>
-          <div class="first-row-buttons">
-            <input type="button" value="C" onclick="clearResult()" />
-            <input type="button" value="CE" onclick="clearLast()" />
+          <div>
+            <input type="button" id="clear" value="C" onclick="clearResult()" />
+            <input type="button" id="clear-last" value="CE" onclick="clearLast()" />
             <input type="button" value="%" onclick="insert('%')" />
             <input type="button" value="/" onclick="insert('/')" />
           </div>
-            <div class="second-row-buttons">
+            <div>
                 <input type="button" value="7" onclick="insert(7)" />
                 <input type="button" value="8" onclick="insert(8)" />
                 <input type="button" value="9" onclick="insert(9)" />
                 <input type="button" value="*" onclick="insert('*')" />
             </div>
-            <div class="third-row-buttons">
+            <div>
                 <input type="button" value="4" onclick="insert(4)" />
                 <input type="button" value="5" onclick="insert(5)" />
                 <input type="button" value="6" onclick="insert(6)" />
                 <input type="button" value="-" onclick="insert('-')" />
             </div>
-            <div class="fourth-row-buttons">
+            <div>
                 <input type="button" value="1" onclick="insert(1)" />
                 <input type="button" value="2" onclick="insert(2)" />
                 <input type="button" value="3" onclick="insert(3)" />
                 <input type="button" value="+" onclick="insert('+')" />
             </div>
-            <div class="fifth-row-buttons">
+            <div>
                 <input type="button" value="0" onclick="insert(0)" />
                 <input type="button" value="." onclick="insert('.')" />
-                <input type="button" value="=" onclick="calculate()" />
+                <input type="button" id="equals" value="=" onclick="calculate()" />
         </form>
       </div>
     </div>
